@@ -22,10 +22,18 @@
 
             #region Question 3
             ////3.Add a public string Title; field to Book. Set it and print it from Main.
-            Book b3 = new Book();
-            b3.Title = "C#";
-            Console.WriteLine(b3.Title);//run successfully.
-            //because the title is public 
+            //Book b3 = new Book();
+            //b3.Title = "C#";
+            //Console.WriteLine(b3.Title);//run successfully.
+            ////because the title is public 
+
+            #endregion
+            #region Question 4
+            //4.Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
+            //assign it Genre.Science, and print it
+            Book book = new Book();
+            book.BookGenre = Genre.Science;
+            Console.WriteLine(book.BookGenre);
 
             #endregion
 
