@@ -62,11 +62,25 @@
             #region Question 8
             //8.Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and
             //print the result.
-            string genreText = "Science";
-            Genre genre = (Genre)Enum.Parse(typeof(Genre), genreText);
-            Console.WriteLine(genre);
+            //string genreText = "Science";
+            //Genre genre = (Genre)Enum.Parse(typeof(Genre), genreText);
+            //Console.WriteLine(genre);
 
             #endregion
+            #region Question 9
+            //9.Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to
+            //attempt the conversion.Print "Unknown genre" if it fails.
+            string genreText = "Mystery";
+            if (Enum.TryParse<Genre>(genreText, out Genre genre))
+            {
+                Console.WriteLine(genre);
+            }
+            else
+            {
+                Console.WriteLine("UnKnown genre");
+            }
+            #endregion
+
 
 
         }
